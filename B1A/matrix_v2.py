@@ -11,3 +11,13 @@ def create_matrix(l,c,v):
     return m
 
 print( create_matrix(5, 7, 0) )
+
+
+# Transposer la matrice suivante
+
+a = [
+    [3, 2],
+    [7, 8]
+]
+
+# transpose(a)
