@@ -18,7 +18,6 @@ def dimension(m):
 
     return l, c
 
-
 def sum_matrix(m, p):
 
     """
