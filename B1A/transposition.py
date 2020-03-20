@@ -106,3 +106,11 @@ A = [
 AT = transpose(A)
 
 print(AT)
+
+
+B = [
+    [],
+    [],
+    [],
+    [],
+]
