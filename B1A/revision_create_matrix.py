@@ -81,3 +81,28 @@ for i in range(c):
         Atrans[i][j] = A[j][i]
 
 print(Atrans)
+
+def transpose(m):
+    l, c = dimension(m)
+    # c devient les lignes et l les colonnes
+    t = create_matrix(c, l, 0)
+
+    for i in range(c):
+        for j in range(l):
+            t[i][j] = m[j][i]
+
+    return t
+
+# 5x3
+A = [
+    [7, 1, 3],
+    [11 ,0, 17],
+    [47 ,51, 3],
+    [0 ,15, 9],
+    [1 ,1, 1],
+]
+
+# 3x5
+AT = transpose(A)
+
+print(AT)
