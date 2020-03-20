@@ -59,9 +59,25 @@ def dimension(m):
     # un tuple c'est une structure de données comme une liste par exemple
     return (l, c)
 
-print( type( dimension(B) ) )
+# print( type( dimension(B) ) )
 
 # a et b
 # a, b, c = 12, 8, 11
 # assigner les valeur retourner par la fonction dimension pour a, b
 a, b = dimension(B)
+
+A = [
+    [2, 1, 3],
+    [4 ,5, 7]
+]
+
+l, c = dimension(A)
+Atrans = create_matrix(c, l, 0)
+# print(Atrans)
+
+for i in range(c):
+    for j in range(l):
+        # print(Atrans[i][j], end ="")
+        Atrans[i][j] = A[j][i]
+
+print(Atrans)
