@@ -23,3 +23,13 @@ def search_v2(n, l):
     return False
 
 print( search_v2(71, [8,9,7,10]) )
+
+# attention lorsque vous parcourez une liste il faut savoir ce que vous parcourez.
+B = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+
+for b in B:
+    print(b)
