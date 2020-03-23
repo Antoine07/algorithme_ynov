@@ -11,3 +11,6 @@ def square(x):
     return x**2
 
 print( sum_func(square, 10) )
+
+# Somme des 10 premiers cubes
+print( sum_func( lambda x : x**3, 10 ))
