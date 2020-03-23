@@ -11,4 +11,8 @@ def square(x):
 
     return x*x
 
+
 print(sum_func(square, 10))
+# Une lambda peut etre passée en argument d'une fonction
+# Python voit ça comme une fonction dans ce cas
+print(sum_func(lambda x: x**2, 10))
