@@ -23,3 +23,9 @@ def search_indice_v2(x, l):
     return None
 
 print(search_indice_v2(7, [1,2,3,5,7]))
+
+# Comme une chaîne de caractères se parcourt comme une liste 
+# on peut utiliser les fonctions de recherche déjà développées
+print( search_indice_v1("j", "bonjour le monde") )
+
+print( search_indice_v2("j", "bonjour le monde"))
