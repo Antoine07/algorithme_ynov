@@ -44,9 +44,9 @@ matrix = create_matrix(5, 5, 0)
 
 for i in range(5):
     for j in range(5):
-        matrix[i][j] = random.randint(1, 10)
+        matrix[i][j] = random.randint(1, 3)
 
-w = [1, 2, 3]
+w = [1, 2]
 print(w)
 print(matrix)
 
@@ -56,7 +56,8 @@ def search_matrix(w, matrix):
 
     for i in range(l):
         j = search_word(w, matrix[i])
-        print(j)
+        if j != None:
+            m[i][j] = True
 
     return m
 
